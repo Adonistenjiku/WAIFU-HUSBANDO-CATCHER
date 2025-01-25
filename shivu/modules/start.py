@@ -36,7 +36,7 @@ async def start(update: Update, context: CallbackContext) -> None:
         caption = f"""
         ***Heyyyy...***
 
-***I am An Open Source Character Catcher Bot...​Add Me in Your group.. And I will send Random Characters After.. every 100 messages in Group... Use /guess to.. Collect that Characters in Your Collection.. and see Collection by using /Harem... So add in Your groups and Collect Your harem***
+***I am An Open Source Character killer Bot...​Add Me in Your group.. And I will send Random Characters After.. every 100 messages in Group... Use /kill to.. Collect that Characters in Your Collection.. and see Collection by using /kHarem... So add in Your groups and Collect Your harem***
         """
         
         keyboard = [
@@ -72,15 +72,15 @@ async def button(update: Update, context: CallbackContext) -> None:
         help_text = """
     ***Help Section:***
     
-***/guess: To Guess character (only works in group)***
-***/fav: Add Your fav***
-***/trade : To trade Characters***
-***/gift: Give any Character from Your Collection to another user.. (only works in groups)***
-***/collection: To see Your Collection***
-***/topgroups : See Top Groups.. Ppl Guesses Most in that Groups***
-***/top: Too See Top Users***
-***/ctop : Your ChatTop***
-***/changetime: Change Character appear time (only works in Groups)***
+***/kguess: To Guess character (only works in group)***
+***/kfav: Add Your fav***
+***/ktrade : To trade Characters***
+***/kgift: Give any Character from Your Collection to another user.. (only works in groups)***
+***/kharem: To see Your Collection***
+***/ktopgroups : See Top Groups.. Ppl Guesses Most in that Groups***
+***/ktop: Too See Top Users***
+***/kctop : Your ChatTop***
+***/kchangetime: Change Character appear time (only works in Groups)***
    """
         help_keyboard = [[InlineKeyboardButton("⤾ Bᴀᴄᴋ", callback_data='back')]]
         reply_markup = InlineKeyboardMarkup(help_keyboard)
@@ -92,7 +92,7 @@ async def button(update: Update, context: CallbackContext) -> None:
         caption = f"""
         ***Hoyyyy...*** ✨
 
-***I am An Open Source Character Catcher Bot..​Add Me in Your group.. And I will send Random Characters After.. every 100 messages in Group... Use /guess to.. Collect that Characters in Your Collection.. and see Collection by using /Harem... So add in Your groups and Collect Your harem***
+***I am An Open Source Character killer Bot..​Add Me in Your group.. And I will send Random Characters After.. every 100 messages in Group... Use /kill to.. Collect that Characters in Your Collection.. and see Collection by using /kHarem... So add in Your groups and Collect Your harem***
         """
 
         
