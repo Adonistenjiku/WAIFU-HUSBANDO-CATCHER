@@ -6,7 +6,7 @@ from shivu import user_collection, shivuu
 pending_trades = {}
 
 
-@shivuu.on_message(filters.command("trade"))
+@shivuu.on_message(filters.command("ktrade"))
 async def trade(client, message):
     sender_id = message.from_user.id
 
@@ -46,7 +46,7 @@ async def trade(client, message):
 
 
     if len(message.command) != 3:
-        await message.reply_text("/trade [Your Character ID] [Other User Character ID]!")
+        await message.reply_text("/ktrade [Your Character ID] [Other User Character ID]!")
         return
 
     sender_character_id, receiver_character_id = message.command[1], message.command[2]
