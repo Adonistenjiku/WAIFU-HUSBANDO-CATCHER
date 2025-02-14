@@ -84,7 +84,7 @@ async def upload(update: Update, context: CallbackContext) -> None:
 
 async def delete(update: Update, context: CallbackContext) -> None:
     if str(update.effective_user.id) not in sudo_users:
-        await update.message.reply_text('Ask my Owner to use this Command...')
+        await update.message.reply_text('Ask my Lovely Owner to use this Command...')
         return
 
     try:
@@ -132,7 +132,7 @@ async def update(update: Update, context: CallbackContext) -> None:
         if args[1] in ['name', 'anime']:
             new_value = args[2].replace('-', ' ').title()
         elif args[1] == 'rarity':
-            rarity_map = {1: "⚪ Common", 2: "🟣 Rare", 3: "🟡 Legendary", 4: "🟢 Medium", 5: "🔮 premium edition", 7: "🎗️ Supreme"}
+            rarity_map = {1: "⚪ Common", 2: "🟣 Rare", 3: "🟡 Legendary", 4: "🟢 Medium", 5: "🔮 premium edition", 6: "🎗️ Supreme"}
             try:
                 new_value = rarity_map[int(args[2])]
             except KeyError:
